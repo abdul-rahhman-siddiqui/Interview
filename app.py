@@ -11,8 +11,7 @@ from wtforms.validators import DataRequired
 cluster = MongoClient("mongodb+srv://alaska:asdfghjkl123@cluster0.lzlbk.mongodb.net/myFirstDatabase?retryWrites=true&w=majority")
 db =cluster['login']
 Collection = db['username']
-user=''
-pas=''
+
 app = Flask(__name__)
 
 app.config['SECRET_KEY']  = 'mykey'
